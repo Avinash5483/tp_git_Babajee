@@ -5,7 +5,7 @@ def Add(a,b):
     return x
 
 def main():
-    print(Add(2,3))
+    print(Add(2,3,4))
 main()
 
 
