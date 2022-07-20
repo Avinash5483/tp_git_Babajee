@@ -1,11 +1,24 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
-def Add(a,b):
-    x = a+b
-    return x
+
+import sys
+
+def add(a,b):
+	return(a+b)
+
 
 def main():
-    print(Add(2,3,4))
-main()
+	arg=len(sys.argv)-1
+	if (arg < 2):
+		print("Error")
+		x = int(sys.argv[1])
+		y = int(input("Enter another values : "))
+		print (add(x,y))
 
+	else:
+		x= int(sys.argv[1])
+		y= int(sys.argv[2])
+		print (add(x,y))
+
+main()
 
